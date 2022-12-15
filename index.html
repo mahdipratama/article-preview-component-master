@@ -6,6 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="dist/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
 
   <title>Frontend Mentor | Article preview component</title>
 
@@ -13,19 +18,55 @@
 </head>
 
 <body>
+  <main class="container">
+    <article class="article">
+      <picture class="article__picture">
+        <img class="article__picture-img" src="/images/drawers.jpg" alt="green aesthetic table">
+      </picture>
 
-  Shift the overall look and feel by adding these wonderful
-  touches to furniture in your home
+      <div class="article__detail">
+        <h2 class="article__detail-title">
+          Shift the overall look and feel by adding these wonderful
+          touches to furniture in your home
+        </h2>
 
-  Ever been in a room and felt like something was missing? Perhaps
-  it felt slightly bare and uninviting. I’ve got some simple tips
-  to help you make any room feel complete.
+        <p class="article__detail-intro">
+          Ever been in a room and felt like something was missing? Perhaps
+          it felt slightly bare and uninviting. I’ve got some simple tips
+          to help you make any room feel complete.
+        </p>
 
-  Michelle Appleton
-  28 Jun 2020
+        <div class="wrapper article__detail-author">
+          <img class="img-profile" src="/images/avatar-michelle.jpg" alt="michelle avatar">
+          <div class="author-name">
+            <p>Michelle Appleton</p>
+            <span>28 Jun 2020</span>
+          </div>
+          <div class="share-icon">
+            <i class="fa-solid fa-share-from-square"></i>
+          </div>
+        </div>
+      </div>
+      <div class="share-icons">
+        <span>share</span>
+        <a class="icons" href="https://www.facebook.com/" target="_blank">
+          <i class="fa-brands fa-square-facebook fa-xl"></i>
+        </a>
+        <a class="icons" href="https://twitter.com/" target="_blank">
+          <i class="fa-brands fa-twitter fa-xl"></i>
+        </a>
+        <a class="icons" href="https://pinterest.com/" target="_blank">
+          <i class="fa-brands fa-pinterest fa-xl"></i>
+        </a>
+        <div class="close-share-icon">
+          <i class="fa-solid fa-share-from-square share"></i>
+        </div>
+      </div>
+    </article>
+  </main>
 
-  Share
-
+  <script src="app/js/script.js"></script>
+  <script src="https://kit.fontawesome.com/fcd40fd7cb.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

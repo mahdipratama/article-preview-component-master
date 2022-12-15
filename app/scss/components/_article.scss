@@ -1,0 +1,140 @@
+@use '../utilities' as *;
+
+.article {
+  position: relative;
+  background-color: var(--white);
+  border-radius: rem(11);
+  overflow: hidden;
+
+  &__picture {
+    flex: 40% 0 0;
+
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__detail {
+    padding: rem(38) rem(30) rem(15);
+    position: relative;
+
+    & h2 {
+      font-size: rem(16);
+      font-weight: 700;
+      margin-bottom: rem(18);
+    }
+
+    & p {
+      font-size: rem(13);
+      color: var(--dark-blue);
+      margin-bottom: rem(32);
+    }
+
+    & .wrapper {
+      display: flex;
+      align-items: center;
+
+      & .img-profile {
+        width: rem(43);
+        height: rem(43);
+        border-radius: 50%;
+        margin-right: rem(18);
+      }
+
+      & .author-name {
+        display: flex;
+        flex-direction: column;
+
+        & p {
+          font-weight: 700;
+          color: var(--dark-gray-blue);
+          margin: 0;
+        }
+
+        & span {
+          font-size: rem(15);
+        }
+      }
+
+      & .share-icon {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        width: rem(34);
+        height: rem(35);
+        background-color: var(--light-gray);
+        margin-left: auto;
+        cursor: pointer;
+        transition: all 150ms ease-in;
+
+        &:hover,
+        &:focus,
+        &:active {
+          background-color: var(--gray-blue);
+          color: white;
+        }
+      }
+    }
+  }
+
+  @include breakpoint-down(small) {
+    & .share-icons {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: absolute;
+      padding: 0 rem(30);
+      top: 89%;
+      right: -100%;
+      bottom: 0;
+      background-color: var(--dark-gray-blue);
+      width: 100%;
+      transition: all 0.3s ease-in;
+
+      z-index: 2;
+
+      & span {
+        color: var(--gray-blue);
+        text-transform: uppercase;
+        letter-spacing: 5px;
+      }
+
+      & .icons {
+        transition: all 150ms ease-in;
+
+        &:hover,
+        &:focus,
+        &:active {
+          color: var(--gray-blue);
+        }
+      }
+
+      & .close-share-icon {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        width: rem(34);
+        height: rem(35);
+        background-color: var(--light-gray);
+        // margin-left: auto;
+        cursor: pointer;
+        transition: all 150ms ease-in;
+
+        &:hover,
+        &:focus,
+        &:active {
+          background-color: var(--dark-blue);
+          color: white;
+        }
+      }
+
+      &.active {
+        right: 0;
+      }
+    }
+  }
+}

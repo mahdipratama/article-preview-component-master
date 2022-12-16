@@ -11,6 +11,7 @@
   flex-direction: column;
   max-width: rem(400);
   margin: rem(70) 0;
+  box-shadow: #0000007f 10px 10px 21px -14px;
 
   @include breakpoint-up(medium) {
     flex-direction: row;

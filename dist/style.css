@@ -41,6 +41,7 @@ body {
   flex-direction: column;
   max-width: 25rem;
   margin: 4.375rem 0;
+  box-shadow: rgba(0, 0, 0, 0.4980392157) 10px 10px 21px -14px;
 }
 @media (min-width: 43.75rem) {
   .article {
@@ -119,6 +120,7 @@ a:active {
 }
 .article__detail .wrapper .author-name span {
   font-size: 0.9375rem;
+  color: var(--gray-blue);
 }
 .article__detail .wrapper .share-icon {
   display: inline-flex;

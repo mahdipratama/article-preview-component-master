@@ -4,7 +4,8 @@ const closeShareIcon = document.querySelector('.close-share-icon');
 
 
 shareIcon.addEventListener('click', () => {
-  shareIcons.classList.add('active');
+  shareIcons.classList.toggle('active');
+
 });
 
 closeShareIcon.addEventListener('click', () => {

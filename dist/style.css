@@ -42,6 +42,12 @@ body {
   max-width: 25rem;
   margin: 4.375rem 0;
 }
+@media (min-width: 43.75rem) {
+  .article {
+    flex-direction: row;
+    max-width: 45.6875rem;
+  }
+}
 
 h1,
 h2,
@@ -173,5 +179,20 @@ a:active {
   }
   .article .share-icons.active {
     right: 0;
+  }
+}
+@media (min-width: 43.75rem) {
+  .article__detail {
+    padding: 2.1875rem;
+    padding-bottom: 1.875rem;
+  }
+  .article__detail h2 {
+    font-size: 1.25rem;
+  }
+  .article__detail p {
+    margin-bottom: 1.25rem;
+  }
+  .article .share-icons {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */
